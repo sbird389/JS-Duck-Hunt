@@ -1,0 +1,16 @@
+{
+  "name": "js-duck-hunt",
+  "version": "1.0.0",
+  "description": "Classic SNES game Duck Hunt ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node-sass SASS/main.scss style.css --watch"
+  },
+    
+  "author": "Sam Bird",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
