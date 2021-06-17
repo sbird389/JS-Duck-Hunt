@@ -12,22 +12,36 @@
   <title>Duck Hunt</title>
 </head>
 <body>
-<div class="screen">
+<div class="screen u-mt-large">
   <div class="start-menu">
-    <h1 class="h1 duck">DUCK</h1>
-    <h1 class= "h1">HUNT</h1>
-    <div class="game-type-options">
-      <input type="radio" id="gameA">
-      <label for="gameA">Game A</label>
-      <input type="radio" id="gameB">
-      <label for="gameA">Game B</label>
-      <input type="radio" id="gameC">
-      <label for="gameA">Game C</label>
+    <div class="start-menu__title">
+      <h1 class="h1 h1--duck">DUCK</h1>
+      <h1 class= "h1 h1--hunt ">HUNT</h1>
     </div>
-    <a href="#" class="btn">START</a>
+    <div class="start-menu__options">
+      <div class="start-menu__options--box">
+        <input type="radio" id="gameA" name="game" checked>
+        <label for="gameA">Game A
+          <span>1 Duck</span>
+        </label>
+      </div>
+      <div class="start-menu__options--box">
+        <input type="radio" id="gameB" name="game">
+        <label for="gameB">Game B 
+        <span>2 Ducks</span>
+        </label>
+      </div>
+      <div class="start-menu__options--box">
+        <input type="radio" id="gameC" name="game">
+        <label for="gameC">Game C
+          <span>Clay Shooting</span>
+        </label>
+      </div>
+    </div>
+    <a href="#" class="btn u-mt-small">START</a>
     <div class="top-score__box">
       <h2 class= "h2">TOP SCORE =</h2>
-      <h2 class="h2"></h2>
+      <h2 class="h2" id="topScore">12000</h2>
     </div>
     <p class="copyright">&copy;1984 NINTENDO CO.,LTD.</p>
   </div>

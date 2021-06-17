@@ -4585,18 +4585,30 @@ readers do not read off random characters that represent icons */
 .h1 {
   font-family: "Sigmar One", cursive;
   font-size: 10rem;
+  line-height: 10rem;
   color: #0aabd7; }
+  .h1--duck {
+    position: relative;
+    padding-right: 10rem; }
+    .h1--duck::after {
+      content: "";
+      height: 0.3rem;
+      width: 100%;
+      background-color: #f69a3a;
+      position: absolute;
+      top: 100%;
+      left: 0%; }
+  .h1--hunt {
+    padding-left: 10rem; }
 
-.duck {
-  position: relative; }
-  .duck::after {
-    content: "";
-    height: 0.5rem;
-    width: 100%;
-    background-color: #f69a3a;
-    position: absolute;
-    top: 100%;
-    left: 0%; }
+.u-mt-small {
+  margin-top: 2rem; }
+
+.u-mt-medium {
+  margin-top: 4rem; }
+
+.u-mt-large {
+  margin-top: 6rem; }
 
 * {
   margin: 0;
@@ -4618,11 +4630,66 @@ body {
   align-items: center; }
 
 .screen {
+  align-items: center;
   background-color: black;
+  min-width: 10rem;
+  min-height: 10rem;
   width: 90vw;
   height: 90vh; }
 
 .start-menu {
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column; }
+  .start-menu__title {
+    display: flex;
+    flex-direction: column; }
+  .start-menu__options {
+    font-family: "Press Start 2P", cursive;
+    color: #f69a3a;
+    text-align: center;
+    width: 50vw;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(20%);
+    align-items: flex-start; }
+    .start-menu__options--box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      text-transform: uppercase; }
+    .start-menu__options span {
+      margin-left: 2rem; }
+    .start-menu__options input {
+      cursor: pointer;
+      height: 3rem;
+      width: 5rem; }
+  .start-menu .top-score__box {
+    display: flex;
+    color: green;
+    font-size: 2rem;
+    width: 50%;
+    justify-content: center;
+    margin: 2rem;
+    font-family: "Press Start 2P", cursive; }
+  .start-menu .copyright {
+    color: white;
+    font-family: "Press Start 2P", cursive; }
+
+.btn {
+  color: #f69a3a;
+  text-decoration: none;
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  font-family: "Sigmar One", cursive; }

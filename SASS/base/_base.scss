@@ -21,8 +21,10 @@ body {
   align-items: center;
 }
 .screen {
+  align-items: center;
   background-color: black;
-
+  min-width: 10rem;
+  min-height: 10rem;
   width: 90vw;
   height: 90vh;
 }

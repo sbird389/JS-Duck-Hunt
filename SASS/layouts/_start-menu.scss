@@ -1,5 +1,55 @@
 .start-menu {
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__options {
+    font-family: "Press Start 2P", cursive;
+    color: rgb(246, 154, 58);
+    text-align: center;
+    width: 50vw;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(20%);
+    align-items: flex-start;
+    &--box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    & span {
+      margin-left: 2rem;
+    }
+    & input {
+      cursor: pointer;
+      height: 3rem;
+      width: 5rem;
+    }
+  }
+
+  .top-score__box {
+    display: flex;
+    color: green;
+    font-size: 2rem;
+    width: 50%;
+    justify-content: center;
+    margin: 2rem;
+    font-family: "Press Start 2P", cursive;
+  }
+  .copyright {
+    color: white;
+    font-family: "Press Start 2P", cursive;
+  }
 }
