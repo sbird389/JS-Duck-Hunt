@@ -1,12 +1,18 @@
 .btn {
   color: rgb(246, 154, 58);
   text-decoration: none;
-  height: 3rem;
-  width: 6rem;
+  height: 6rem;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   border-radius: 100px;
   font-family: "Sigmar One", cursive;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  transform: translateY(-10px);
+  &:active {
+    transform: translateY(0px);
+  }
 }

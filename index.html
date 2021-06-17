@@ -7,18 +7,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sigmar+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script defer src="src/js/controller.js"></script>
+  <script type="module" defer src="./JS/controller.js"></script>
+
 
   <title>Duck Hunt</title>
 </head>
 <body>
 <div class="screen u-mt-large">
-  <div class="start-menu">
+  <div class="start-menu u-mt-large">
     <div class="start-menu__title">
       <h1 class="h1 h1--duck">DUCK</h1>
       <h1 class= "h1 h1--hunt ">HUNT</h1>
     </div>
-    <div class="start-menu__options">
+    <div class="start-menu__options u-mt-large">
       <div class="start-menu__options--box">
         <input type="radio" id="gameA" name="game" checked>
         <label for="gameA">Game A
@@ -40,12 +41,16 @@
     </div>
     <a href="#" class="btn u-mt-small">START</a>
     <div class="top-score__box">
-      <h2 class= "h2">TOP SCORE =</h2>
-      <h2 class="h2" id="topScore">12000</h2>
+      <h2 class= "h2">TOP SCORE =  </h2>
+      <h2 class="h2" id="topScore">  12000</h2>
     </div>
-    <p class="copyright">&copy;1984 NINTENDO CO.,LTD.</p>
+    <p class="copyright u-mt-large">&copy;1984 NINTENDO CO.,LTD.</p>
   </div>
-  
+  <div class="game-screen">
+
+  </div>
+
+
 
 
 

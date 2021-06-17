@@ -4584,8 +4584,8 @@ readers do not read off random characters that represent icons */
 
 .h1 {
   font-family: "Sigmar One", cursive;
-  font-size: 10rem;
-  line-height: 10rem;
+  font-size: 15rem;
+  line-height: 15rem;
   color: #0aabd7; }
   .h1--duck {
     position: relative;
@@ -4632,10 +4632,10 @@ body {
 .screen {
   align-items: center;
   background-color: black;
-  min-width: 10rem;
-  min-height: 10rem;
-  width: 90vw;
-  height: 90vh; }
+  max-width: 100rem;
+  min-width: 100rem;
+  min-height: 80rem;
+  max-height: 80rem; }
 
 .start-menu {
   height: 100%;
@@ -4658,6 +4658,8 @@ body {
     justify-content: center;
     transform: translate(20%);
     align-items: flex-start; }
+    .start-menu__options label {
+      cursor: pointer; }
     .start-menu__options--box {
       display: flex;
       justify-content: center;
@@ -4685,11 +4687,16 @@ body {
 .btn {
   color: #f69a3a;
   text-decoration: none;
-  height: 3rem;
-  width: 6rem;
+  height: 6rem;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   border-radius: 100px;
-  font-family: "Sigmar One", cursive; }
+  font-family: "Sigmar One", cursive;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  transform: translateY(-10px); }
+  .btn:active {
+    transform: translateY(0px); }
