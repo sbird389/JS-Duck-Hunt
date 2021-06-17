@@ -13,3 +13,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  background-color: black;
+
+  width: 90vw;
+  height: 90vh;
+}
