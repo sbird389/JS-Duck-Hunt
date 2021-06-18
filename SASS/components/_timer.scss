@@ -1,4 +1,9 @@
 .timer {
-  grid-column: 2;
-  background-color: white;
+  grid-column: 2/-1;
+  margin-top: 1rem;
+  color: $color-blue;
+  font-size: 2rem;
+  letter-spacing: 2px;
+
+  font-family: "Work Sans", sans-serif;
 }
