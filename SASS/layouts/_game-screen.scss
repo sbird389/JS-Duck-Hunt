@@ -1,0 +1,78 @@
+.bullet-img {
+  width: 5rem;
+  height: 5rem;
+}
+.hitDuck {
+  background-color: white;
+}
+
+.game-screen {
+  cursor: crosshair;
+  flex: 1;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Press Start 2P", cursive;
+  background-image: url("../../IMAGES/mainbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  align-items: flex-end;
+  &__hud {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: [shot-start]1fr [hit-start] 8fr [score-start] 2fr [score-end];
+    font-size: 2.5rem;
+    color: $color-green;
+
+    &--all {
+      background-color: black;
+      height: fit-content;
+      border-radius: 2rem;
+      border: solid 5px $color-green;
+      padding: 1rem;
+    }
+    &--round {
+      margin-top: auto;
+      grid-row: 1/2;
+      text-align: center;
+    }
+    &--shot {
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $color-blue;
+      grid-row: 2;
+      grid-column-start: shot-start;
+      padding: 1rem;
+      margin: 1rem;
+      &-imgs {
+        display: flex;
+        justify-content: center;
+        height: 5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    &--hit {
+      display: grid;
+      grid-template-rows: 2fr 2fr;
+      grid-template-columns: 4fr repeat(10, 1fr);
+      margin: auto 0;
+      border-radius: 2rem;
+      grid-row: 2;
+      grid-column-start: hit-start;
+    }
+    &--score {
+      margin: auto 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      border-radius: 2rem;
+      color: $color-white-grey;
+      grid-row: 2;
+      grid-column-start: score-start;
+    }
+  }
+}

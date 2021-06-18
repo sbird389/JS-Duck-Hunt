@@ -4610,6 +4610,11 @@ readers do not read off random characters that represent icons */
 .u-mt-large {
   margin-top: 6rem; }
 
+.u-hidden {
+  visibility: hidden;
+  height: 0 !important;
+  width: 0 !important; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -4630,7 +4635,9 @@ body {
   align-items: center; }
 
 .screen {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   background-color: black;
   max-width: 100rem;
   min-width: 100rem;
@@ -4684,6 +4691,74 @@ body {
     color: white;
     font-family: "Press Start 2P", cursive; }
 
+.bullet-img {
+  width: 5rem;
+  height: 5rem; }
+
+.hitDuck {
+  background-color: white; }
+
+.game-screen {
+  cursor: crosshair;
+  flex: 1;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Press Start 2P", cursive;
+  background-image: url("../../IMAGES/mainbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: flex-end; }
+  .game-screen__hud {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: [shot-start] 1fr [hit-start] 8fr [score-start] 2fr [score-end];
+    font-size: 2.5rem;
+    color: #90b50e; }
+    .game-screen__hud--all {
+      background-color: black;
+      height: fit-content;
+      border-radius: 2rem;
+      border: solid 5px #90b50e;
+      padding: 1rem; }
+    .game-screen__hud--round {
+      margin-top: auto;
+      grid-row: 1/2;
+      text-align: center; }
+    .game-screen__hud--shot {
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #0aabd7;
+      grid-row: 2;
+      grid-column-start: shot-start;
+      padding: 1rem;
+      margin: 1rem; }
+      .game-screen__hud--shot-imgs {
+        display: flex;
+        justify-content: center;
+        height: 5rem;
+        margin-bottom: 1rem; }
+    .game-screen__hud--hit {
+      display: grid;
+      grid-template-rows: 2fr 2fr;
+      grid-template-columns: 4fr repeat(10, 1fr);
+      margin: auto 0;
+      border-radius: 2rem;
+      grid-row: 2;
+      grid-column-start: hit-start; }
+    .game-screen__hud--score {
+      margin: auto 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      border-radius: 2rem;
+      color: #bebdbe;
+      grid-row: 2;
+      grid-column-start: score-start; }
+
 .btn {
   color: #f69a3a;
   text-decoration: none;
@@ -4700,3 +4775,6 @@ body {
   transform: translateY(-10px); }
   .btn:active {
     transform: translateY(0px); }
+
+.timer {
+  grid-column: 2; }

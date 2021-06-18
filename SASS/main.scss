@@ -4,7 +4,10 @@
 @import "./base/typography.scss";
 @import "./base/utilities";
 @import "./base/base";
+@import "./abstracts/variables";
 
 @import "./layouts/start-menu";
+@import "./layouts/game-screen";
 
 @import "./components/buttons";
+@import "./components/timer";

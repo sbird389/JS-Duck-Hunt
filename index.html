@@ -13,7 +13,7 @@
   <title>Duck Hunt</title>
 </head>
 <body>
-<div class="screen u-mt-large">
+<div class="screen u-mt-large ">
   <div class="start-menu u-mt-large">
     <div class="start-menu__title">
       <h1 class="h1 h1--duck">DUCK</h1>
@@ -45,17 +45,50 @@
       <h2 class="h2" id="topScore">  12000</h2>
     </div>
     <p class="copyright u-mt-large">&copy;1984 NINTENDO CO.,LTD.</p>
-  </div>
-  <div class="game-screen">
+  </div>  
+  <div class="game-screen u-hidden">
+    <div class="game-screen__hud">
+      <div class="game-screen__hud--all game-screen__hud--round">
+        <span>R = <span id="roundNumber"> 0</span></span>
+      </div>
+        <div class="game-screen__hud--all game-screen__hud--shot">
+          <div class="game-screen__hud--shot-imgs">
+            <img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" >
+            <img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" >
+            <img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" >
+          </div>
+          <span>SHOT</span>
+        </div>
+        <div class="game-screen__hud--all game-screen__hud--hit">
+          <span>HIT</span>
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck1">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck2">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck3">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck4">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck5">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck6">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck7">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck8">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck9">
+          <img src="./IMAGES/duck-icon.png" alt="Duck silohette image" class="hitDuck" id="hitDuck10">
+          <div class="timer">
+            
+          </div>
+        </div>
+        <div class="game-screen__hud--all game-screen__hud--score">
+          <span id="score">114526</span>
+          <span>SCORE</span>
+        </div>
+    </div>
 
   </div>
-
-
-
-
-
 
 </div>
+
 </body>
 
+
+
 </html>
+
+

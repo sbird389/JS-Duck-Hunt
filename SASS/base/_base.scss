@@ -21,7 +21,9 @@ body {
   align-items: center;
 }
 .screen {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   background-color: black;
   max-width: 100rem;
   min-width: 100rem;
