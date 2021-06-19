@@ -5,27 +5,31 @@
   height: 7rem;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 60%;
-  right: 40%;
+  top: 40%;
+  right: 80%;
   animation-name: duckMovement;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   overflow: hidden;
   &--img-1 {
     background-image: url(../../IMAGES/duck-img-1.png);
+    transform: rotateY(180deg);
   }
   &--img-2 {
     background-image: url(../../IMAGES/duck-img-2.png);
+    transform: rotateY(180deg);
   }
   &--img-3 {
     background-image: url(../../IMAGES/duck-img-3.png);
+    transform: rotateY(180deg);
   }
 }
 
+//move to animations
 @keyframes duckMovement {
   0% {
     top: 80%;
-    right: 80%;
+    right: 20%;
   }
   10% {
   }
@@ -48,6 +52,6 @@
   }
   100% {
     top: -20%;
-    right: -20%;
+    right: 120%;
   }
 }

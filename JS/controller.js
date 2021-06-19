@@ -13,4 +13,5 @@ const controlGameStart = function () {
 };
 
 startMenuView.startClickHandler(controlGameStart);
+duckView.addShotHandler();
 console.log(gameScreenView);

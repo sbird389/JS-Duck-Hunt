@@ -19,13 +19,41 @@
   z-index: 1;
   &__forground {
     background-image: url("../../IMAGES/Backround\ Front.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 3;
+    clip-path: polygon(
+      0% 100%,
+      0% 57%,
+      11% 56%,
+      23% 30%,
+      33% 26%,
+      40% 37%,
+      43% 48%,
+      44% 58%,
+      45% 66%,
+      50% 66%,
+      56% 65%,
+      61% 66%,
+      64% 58%,
+      69% 57%,
+      73% 59%,
+      73% 66%,
+      78% 68%,
+      84% 66%,
+      89% 68%,
+      95% 69%,
+      98% 58%,
+      100% 58%,
+      100% 72%,
+      100% 81%,
+      100% 89%,
+      100% 100%
+    );
   }
   &__hud {
     display: grid;

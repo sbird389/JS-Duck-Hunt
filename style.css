@@ -4711,13 +4711,14 @@ body {
   z-index: 1; }
   .game-screen__forground {
     background-image: url("../../IMAGES/Backround Front.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 3; }
+    z-index: 3;
+    clip-path: polygon(0% 100%, 0% 57%, 11% 56%, 23% 30%, 33% 26%, 40% 37%, 43% 48%, 44% 58%, 45% 66%, 50% 66%, 56% 65%, 61% 66%, 64% 58%, 69% 57%, 73% 59%, 73% 66%, 78% 68%, 84% 66%, 89% 68%, 95% 69%, 98% 58%, 100% 58%, 100% 72%, 100% 81%, 100% 89%, 100% 100%); }
   .game-screen__hud {
     display: grid;
     grid-column-gap: 2rem;
@@ -4812,23 +4813,26 @@ body {
   height: 7rem;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 60%;
-  right: 40%;
+  top: 40%;
+  right: 80%;
   animation-name: duckMovement;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   overflow: hidden; }
   .duck--img-1 {
-    background-image: url(../../IMAGES/duck-img-1.png); }
+    background-image: url(../../IMAGES/duck-img-1.png);
+    transform: rotateY(180deg); }
   .duck--img-2 {
-    background-image: url(../../IMAGES/duck-img-2.png); }
+    background-image: url(../../IMAGES/duck-img-2.png);
+    transform: rotateY(180deg); }
   .duck--img-3 {
-    background-image: url(../../IMAGES/duck-img-3.png); }
+    background-image: url(../../IMAGES/duck-img-3.png);
+    transform: rotateY(180deg); }
 
 @keyframes duckMovement {
   0% {
     top: 80%;
-    right: 80%; }
+    right: 20%; }
   10% { }
   20% { }
   30% { }
@@ -4840,4 +4844,4 @@ body {
   90% { }
   100% {
     top: -20%;
-    right: -20%; } }
+    right: 120%; } }

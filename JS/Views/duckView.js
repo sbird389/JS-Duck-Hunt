@@ -1,8 +1,16 @@
 import View from "./View.js";
 
 class DuckView extends View {
+  _parentElement = document.querySelector(".duck");
+
+  addShotHandler(handler) {
+    this._parentElement.addEventListener("click", function () {
+      console.log("BANG");
+    });
+  }
+
   cycleDuckImg() {
-    const _parentElement = document.querySelector(".duck");
+    const _parentElement = this._parentElement;
     let i = 3;
     const changeImg = function () {
       _parentElement.classList.remove(`duck--img-${i}`);
