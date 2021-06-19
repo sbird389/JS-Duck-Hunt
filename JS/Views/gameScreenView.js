@@ -35,7 +35,7 @@ class GameScreenView extends View {
       if (this._parentElement.querySelector(".timer").textContent.length == 0) {
         clearInterval(timer);
       }
-    }, 200);
+    }, 500);
   }
 }
 export default new GameScreenView();

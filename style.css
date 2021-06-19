@@ -4699,24 +4699,33 @@ body {
   background-color: white; }
 
 .game-screen {
+  overflow: hidden;
   position: relative;
   cursor: crosshair;
   flex: 1;
   display: flex;
   text-transform: uppercase;
   font-family: "Press Start 2P", cursive;
-  background-image: url("../../IMAGES/mainbackground.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: flex-end; }
+  background-color: #0aabd7;
+  align-items: flex-end;
+  z-index: 1; }
+  .game-screen__forground {
+    background-image: url("../../IMAGES/Backround Front.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3; }
   .game-screen__hud {
     display: grid;
     grid-column-gap: 2rem;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: [shot-start] 1fr [hit-start] 8fr [score-start] 2fr [score-end];
     font-size: 2.5rem;
-    color: #90b50e; }
+    color: #90b50e;
+    z-index: 4; }
     .game-screen__hud--all {
       background-color: black;
       height: fit-content;
@@ -4795,3 +4804,40 @@ body {
   font-size: 2rem;
   letter-spacing: 2px;
   font-family: "Work Sans", sans-serif; }
+
+.duck {
+  position: absolute;
+  z-index: 2;
+  width: 7rem;
+  height: 7rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 60%;
+  right: 40%;
+  animation-name: duckMovement;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  overflow: hidden; }
+  .duck--img-1 {
+    background-image: url(../../IMAGES/duck-img-1.png); }
+  .duck--img-2 {
+    background-image: url(../../IMAGES/duck-img-2.png); }
+  .duck--img-3 {
+    background-image: url(../../IMAGES/duck-img-3.png); }
+
+@keyframes duckMovement {
+  0% {
+    top: 80%;
+    right: 80%; }
+  10% { }
+  20% { }
+  30% { }
+  40% { }
+  50% { }
+  60% { }
+  70% { }
+  80% { }
+  90% { }
+  100% {
+    top: -20%;
+    right: -20%; } }
