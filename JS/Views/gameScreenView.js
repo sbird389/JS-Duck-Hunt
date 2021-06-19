@@ -1,22 +1,28 @@
-class GameScreenView {
+import View from "./View.js";
+
+class GameScreenView extends View {
   _parentElement = document.querySelector(".game-screen");
 
   //Temporary Toggle function finsihed Screen will be rendered on new game
-  toggleHidden() {
-    this._parentElement.classList.toggle("u-hidden");
-  }
 
   countdownTimer() {
     let i = 3;
+
     const updateTimer = function () {
       if (i == 1) {
         document.getElementById("message").textContent = "GO!";
-        clearInterval(timer);
+        i = "GO!";
         return;
       }
-      i--;
-      document.getElementById("message").textContent = i;
-      console.log(i);
+      if (i == 3 || i == 2) {
+        i--;
+        document.getElementById("message").textContent = i;
+        console.log(i);
+      }
+      if (i == "GO!") {
+        document.getElementById("message").textContent = "";
+        clearInterval(timer);
+      }
     };
     const timer = setInterval(updateTimer, 1000);
   }

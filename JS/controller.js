@@ -4,8 +4,12 @@ import startMenuView from "./Views/startMenuView.js";
 const controlGameStart = function () {
   console.log("Game Start");
   gameScreenView.toggleHidden();
-  //gameScreenView.timerRunDown();
   gameScreenView.countdownTimer();
+  setTimeout(() => {
+    gameScreenView.timerRunDown();
+  }, 4000);
 };
 
 startMenuView.startClickHandler(controlGameStart);
+
+console.log(gameScreenView);

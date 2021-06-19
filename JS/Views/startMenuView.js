@@ -1,4 +1,6 @@
-class StartMenuView {
+import View from "./View.js";
+
+class StartMenuView extends View {
   _parentElement = document.querySelector(".start-menu");
 
   startClickHandler(handler) {
