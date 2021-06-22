@@ -7,14 +7,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sigmar+One&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script type="module" defer src="./JS/controller.js"></script>
+  <script  defer src="./JS/controller.js" type="module"></script>
 
 
   <title>Duck Hunt</title>
 </head>
 <body>
 <div class="screen u-mt-large ">
-  <div class="start-menu u-mt-large">
+  <div class="start-menu u-mt-larges">
     <div class="start-menu__title">
       <h1 class="h1 h1--duck">DUCK</h1>
       <h1 class= "h1 h1--hunt ">HUNT</h1>
@@ -47,21 +47,17 @@
     <p class="copyright u-mt-large">&copy;1984 NINTENDO CO.,LTD.</p>
   </div>  
   <div class="game-screen u-hidden">
-    <div class="duck duck--img-3"></div>
+    <!-- <div class="duck-box duck--fly">
+      <div class="duck duck--img-3 duck--flap"></div>
+    </div> -->
     <div class="game-screen__forground"></div>
-    <div class="game-screen__message-box" id="message">
-      3
-    </div>
+    <div class="game-screen__message-box u-hidden" id="message"></div>
     <div class="game-screen__hud">
       <div class="game-screen__hud--all game-screen__hud--round">
         <span>R = <span id="roundNumber"> 0</span></span>
       </div>
         <div class="game-screen__hud--all game-screen__hud--shot">
-          <div class="game-screen__hud--shot-imgs">
-            <img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" >
-            <img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" >
-            <img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" >
-          </div>
+          <div class="game-screen__hud--shot-imgs"><img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" ><img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" ><img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" ></div>
           <span>SHOT</span>
         </div>
         <div class="game-screen__hud--all game-screen__hud--hit">

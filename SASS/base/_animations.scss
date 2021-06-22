@@ -1,0 +1,105 @@
+@keyframes duckFly {
+  0% {
+    top: 100%;
+    right: 10%;
+  }
+  49% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    top: 50%;
+    right: 80%;
+    transform: rotateY(0deg);
+  }
+  100% {
+    top: -10%;
+    right: 10%;
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes duckFall {
+  0% {
+  }
+  9% {
+    transform: rotateY(0deg);
+  }
+  10% {
+    transform: rotateY(180deg);
+  }
+  19% {
+    transform: rotateY(180deg);
+  }
+  20% {
+    transform: rotateY(0deg);
+  }
+  29% {
+    transform: rotateY(0deg);
+  }
+  30% {
+    transform: rotateY(180deg);
+  }
+  39% {
+    transform: rotateY(180deg);
+  }
+  40% {
+    transform: rotateY(0deg);
+  }
+  49% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  59% {
+    transform: rotateY(180deg);
+  }
+  60% {
+    transform: rotateY(0deg);
+  }
+  69% {
+    transform: rotateY(0deg);
+  }
+  70% {
+    transform: rotateY(180deg);
+  }
+  79% {
+    transform: rotateY(180deg);
+  }
+  80% {
+    transform: rotateY(0deg);
+  }
+  89% {
+    transform: rotateY(0deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+  }
+  99% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes duckFlap {
+  0% {
+    background-image: url(../../IMAGES/duck-img-1.png);
+  }
+  32% {
+    background-image: url(../../IMAGES/duck-img-1.png);
+  }
+  33% {
+    background-image: url(../../IMAGES/duck-img-2.png);
+  }
+  65% {
+    background-image: url(../../IMAGES/duck-img-2.png);
+  }
+  66% {
+    background-image: url(../../IMAGES/duck-img-3.png);
+  }
+  100% {
+    background-image: url(../../IMAGES/duck-img-3.png);
+  }
+}
