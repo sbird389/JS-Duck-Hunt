@@ -56,9 +56,10 @@
     );
   }
   &__hud {
+    user-select: none;
     display: grid;
     grid-column-gap: 2rem;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 3rem 1fr;
     grid-template-columns: [shot-start]1fr [hit-start] 8fr [score-start] 2fr [score-end];
     font-size: 2.5rem;
     color: $color-green;
@@ -71,6 +72,8 @@
       padding: 1rem;
     }
     &--round {
+      font-size: 2rem;
+      height: 4rem;
       margin-top: auto;
       grid-row: 1/2;
       text-align: center;
@@ -113,15 +116,28 @@
     }
   }
   &__message-box {
+    user-select: none;
     display: flex;
     position: absolute;
-    width: 30rem;
-    height: 10rem;
-    top: 40%;
+    width: 60rem;
+    height: 20rem;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
-    font-size: 9rem;
+    font-size: 4rem;
+
+    &--newGame {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      & p {
+        margin: 3rem 0rem 3rem 0rem;
+      }
+    }
   }
 }

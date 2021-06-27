@@ -15,4 +15,10 @@
   &:active {
     transform: translateY(0px);
   }
+
+  &--clear {
+    background-color: transparent;
+    font-family: "Press Start 2P", cursive;
+    color: black;
+  }
 }

@@ -1,0 +1,31 @@
+@keyframes duckFly7 {
+  0% {
+    top: 95%;
+    right: 70%;
+  }
+
+  33% {
+    top: 10%;
+    right: 30%;
+  }
+
+  44% {
+    transform: rotateY(0deg);
+  }
+  45% {
+    transform: rotateY(180deg);
+    top: 30%;
+    right: 10%;
+  }
+
+  70% {
+    top: 20%;
+    right: 70%;
+  }
+
+  100% {
+    top: 50%;
+    right: 120%;
+    transform: rotateY(180deg);
+  }
+}

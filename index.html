@@ -47,14 +47,26 @@
     <p class="copyright u-mt-large">&copy;1984 NINTENDO CO.,LTD.</p>
   </div>  
   <div class="game-screen u-hidden">
-    <!-- <div class="duck-box duck--fly">
-      <div class="duck duck--img-3 duck--flap"></div>
-    </div> -->
+    <audio class="gun-shot" preload="auto" >
+      <source src="./Sounds/gun-shot.mp3" type="audio/mpeg">
+    </audio>
+    <div class="duck-box duck--fly">
+      <div class="duck duck--img-3 duck--flap">
+      </div>
+    </div>
     <div class="game-screen__forground"></div>
-    <div class="game-screen__message-box u-hidden" id="message"></div>
+    <div class="game-screen__message-box" id="message">
+      
+      <!-- <div class="game-screen__message-box--newGame">
+        <h2>GAME OVER !</h2>
+        <p>Start a New Game?</p>
+          <a href="#" id="yes" class="btn btn--clear">Yes</a>
+          <a href="#" id="no" class="btn btn--clear">No</a>
+      </div> -->
+    </div>
     <div class="game-screen__hud">
       <div class="game-screen__hud--all game-screen__hud--round">
-        <span>R = <span id="roundNumber"> 0</span></span>
+        <span>R = <span id="roundNumber"></span></span>
       </div>
         <div class="game-screen__hud--all game-screen__hud--shot">
           <div class="game-screen__hud--shot-imgs"><img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" ><img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" ><img src="./IMAGES/favicon.ico" alt="Bullet Image" class="bullet-img" ></div>
@@ -75,7 +87,7 @@
           <div class="timer">||||||||||||||||||||||||||||||||||||||||||</div>
         </div>
         <div class="game-screen__hud--all game-screen__hud--score">
-          <span id="score">114526</span>
+          <span id="score">0</span>
           <span>SCORE</span>
         </div>
     </div>

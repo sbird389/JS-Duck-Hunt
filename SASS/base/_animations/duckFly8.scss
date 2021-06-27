@@ -1,0 +1,40 @@
+@keyframes duckFly8 {
+  0% {
+    top: 95%;
+    right: 80%;
+    transform: rotateY(180deg);
+  }
+
+  15% {
+    transform: rotateY(180deg);
+    top: 60%;
+    right: 90%;
+  }
+  16% {
+    transform: rotateY(0deg);
+  }
+
+  39% {
+    transform: rotateY(0deg);
+  }
+
+  40% {
+    transform: rotateY(180deg);
+    top: 60%;
+    right: 30%;
+  }
+
+  64% {
+    transform: rotateY(180deg);
+  }
+  65% {
+    transform: rotateY(0deg);
+    top: 30%;
+    right: 90%;
+  }
+
+  90% {
+    top: -10%;
+    right: 30%;
+  }
+}

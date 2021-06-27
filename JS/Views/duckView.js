@@ -1,11 +1,13 @@
 import View from "./View.js";
 class DuckView extends View {
   //Renders New Duck
-  renderDuck() {
+  renderDuck(handler) {
     const markUp = `<div class="duck-box duck--fly"><div class="duck duck--flap"></div></div>`;
     document
       .querySelector(".game-screen")
-      .insertAdjacentHTML("beforeend", markUp);
+      .insertAdjacentHTML("afterbegin", markUp);
+    this.randomiseDuckMovement();
+    handler(document.querySelector(".duck-box"));
   }
   removeDuck() {
     document.querySelectorAll(".duck-box").remove();
@@ -15,7 +17,6 @@ class DuckView extends View {
     document
       .querySelector(".duck-box")
       .addEventListener("animationend", function () {
-        console.log("animationEnded");
         this.remove();
         handler();
       });
@@ -30,12 +31,22 @@ class DuckView extends View {
     duck.classList.remove("duck--flap");
     duckBox.classList.remove("duck--fly");
     duck.classList.add("duck--shot");
+    duckBox.style.animationName = "";
+    duckBox.style.animationDuration = "";
     setTimeout(() => {
-      console.log("animation Start");
       duck.classList.remove("duck--shot");
       duckBox.classList.add("duck--fall");
       duck.classList.add("duck--fallImg");
     }, 500);
+  }
+
+  //function randomly selects flight path animation applies it to the duck object
+  randomiseDuckMovement() {
+    const duckBox = document.querySelector(".duck-box");
+    const flightPath = Math.ceil(Math.random() * 10);
+    console.log(flightPath);
+    duckBox.style.animationName = `duckFly${flightPath}`;
+    console.log(duckBox.style.animation);
   }
 }
 

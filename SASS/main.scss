@@ -4,7 +4,17 @@
 @import "./base/typography.scss";
 @import "./base/utilities";
 @import "./base/base";
-@import "./base/animations";
+@import "./base/_animations/duckFly1.scss";
+@import "./base/_animations/duckFly2.scss";
+@import "./base/_animations/duckFly3.scss";
+@import "./base/_animations/duckFly4.scss";
+@import "./base/_animations/duckFly5.scss";
+@import "./base/_animations/duckFly6.scss";
+@import "./base/_animations/duckFly7.scss";
+@import "./base/_animations/duckFly8.scss";
+@import "./base/_animations/duckFly9.scss";
+@import "./base/_animations/duckFly10.scss";
+@import "./base/_animations/animations";
 @import "./abstracts/variables";
 
 @import "./layouts/start-menu";

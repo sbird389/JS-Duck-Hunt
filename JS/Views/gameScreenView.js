@@ -6,6 +6,14 @@ class GamesScreenView extends View {
   addClickHandler(handler) {
     this._parentElement.addEventListener("click", handler);
   }
+  removeClickHandler(handler) {
+    this._parentElement.removeEventListener("click", handler);
+  }
+
+  addShotSoundEffect() {
+    const sound = document.querySelector(".gun-shot");
+    sound.play();
+  }
 }
 
 export default new GamesScreenView();

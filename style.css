@@ -4629,7 +4629,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: white;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -4644,20 +4644,229 @@ body {
   min-height: 80rem;
   max-height: 80rem; }
 
-@keyframes duckFly {
+@keyframes duckFly1 {
   0% {
-    top: 100%;
-    right: 10%; }
-  49% {
+    top: 95%;
+    right: 0%;
     transform: rotateY(180deg); }
-  50% {
+  39% {
+    transform: rotateY(180deg); }
+  40% {
     top: 50%;
-    right: 80%;
+    right: 90%;
+    transform: rotateY(0deg); }
+  90% {
+    top: -10%;
+    right: 10%; } }
+
+@keyframes duckFly2 {
+  0% {
+    top: 95%;
+    right: 20%; }
+  15% {
+    top: 60%;
+    right: 10%;
+    transform: rotateY(0deg); }
+  16% {
+    transform: rotateY(180deg); }
+  60% {
+    top: 70%;
+    right: 90%;
+    transform: rotateY(180deg); }
+  61% {
     transform: rotateY(0deg); }
   100% {
     top: -10%;
-    right: 10%;
+    right: 30%; } }
+
+@keyframes duckFly3 {
+  0% {
+    top: 95%;
+    right: 30%;
+    transform: rotateY(180deg); }
+  39% {
+    transform: rotateY(180deg); }
+  40% {
+    top: 50%;
+    right: 90%;
+    transform: rotateY(0deg); }
+  90% {
+    top: -10%;
+    right: 35%;
     transform: rotateY(0deg); } }
+
+@keyframes duckFly4 {
+  0% {
+    top: 95%;
+    right: 40%; }
+  33% {
+    top: 40%;
+    right: 30%;
+    transform: rotateY(0deg); }
+  34% {
+    top: 40%;
+    right: 30%;
+    transform: rotateY(180deg); }
+  49% {
+    top: 40%;
+    right: 60%;
+    transform: rotateY(180deg); }
+  50% {
+    top: 40%;
+    right: 60%;
+    transform: rotateY(0deg); }
+  100% {
+    top: -40%;
+    right: -10%; } }
+
+@keyframes duckFly5 {
+  0% {
+    top: 95%;
+    right: 50%; }
+  33% {
+    top: 10%;
+    right: 10%;
+    transform: rotateY(0deg); }
+  34% {
+    transform: rotateY(180deg); }
+  64% {
+    transform: rotateY(180deg); }
+  65% {
+    top: 70%;
+    right: 90%;
+    transform: rotateY(0deg); }
+  95% {
+    top: -10%;
+    right: 50%;
+    transform: rotateY(0deg); } }
+
+@keyframes duckFly6 {
+  0% {
+    top: 95%;
+    right: 60%;
+    transform: rotateY(0deg); }
+  20% {
+    top: 60%;
+    right: 80%;
+    transform: rotateY(180deg); }
+  21% {
+    transform: rotateY(0deg);
+    top: 60%;
+    right: 80%; }
+  35% {
+    transform: rotateY(0deg); }
+  36% {
+    top: 50%;
+    right: 50%;
+    transform: rotateY(180deg); }
+  75% {
+    top: -10%;
+    right: 110%;
+    transform: rotateY(180deg); } }
+
+@keyframes duckFly7 {
+  0% {
+    top: 95%;
+    right: 70%; }
+  33% {
+    top: 10%;
+    right: 30%; }
+  44% {
+    transform: rotateY(0deg); }
+  45% {
+    transform: rotateY(180deg);
+    top: 30%;
+    right: 10%; }
+  70% {
+    top: 20%;
+    right: 70%; }
+  100% {
+    top: 50%;
+    right: 120%;
+    transform: rotateY(180deg); } }
+
+@keyframes duckFly8 {
+  0% {
+    top: 95%;
+    right: 80%;
+    transform: rotateY(180deg); }
+  15% {
+    transform: rotateY(180deg);
+    top: 60%;
+    right: 90%; }
+  16% {
+    transform: rotateY(0deg); }
+  39% {
+    transform: rotateY(0deg); }
+  40% {
+    transform: rotateY(180deg);
+    top: 60%;
+    right: 30%; }
+  64% {
+    transform: rotateY(180deg); }
+  65% {
+    transform: rotateY(0deg);
+    top: 30%;
+    right: 90%; }
+  90% {
+    top: -10%;
+    right: 30%; } }
+
+@keyframes duckFly9 {
+  0% {
+    top: 95%;
+    right: 90%; }
+  20% {
+    top: 40%;
+    right: 80%; }
+  45% {
+    top: 40%;
+    right: 10%;
+    transform: rotateY(0deg); }
+  46% {
+    top: 50%;
+    transform: rotateY(180deg); }
+  60% {
+    top: 60%;
+    right: 30%; }
+  85% {
+    top: -10%;
+    right: 40%;
+    transform: rotateY(180deg); } }
+
+@keyframes duckFly10 {
+  0% {
+    top: 95%;
+    right: 95%; }
+  15% {
+    top: 60%;
+    right: 85%; }
+  30% {
+    top: 60%;
+    right: 40%;
+    transform: rotateY(0deg); }
+  31% {
+    transform: rotateY(180deg); }
+  49% {
+    transform: rotateY(180deg);
+    top: 50%;
+    right: 70%; }
+  50% {
+    transform: rotateY(0deg);
+    top: 50%;
+    right: 70%; }
+  79% {
+    transform: rotateY(0deg);
+    top: 20%;
+    right: 10%; }
+  80% {
+    transform: rotateY(180deg);
+    top: 20%;
+    right: 10%; }
+  100% {
+    top: -10%;
+    right: 100%;
+    transform: rotateY(180deg); } }
 
 @keyframes duckFall {
   0% { }
@@ -4792,9 +5001,10 @@ body {
     z-index: 3;
     clip-path: polygon(0% 100%, 0% 57%, 11% 56%, 23% 30%, 33% 26%, 40% 37%, 43% 48%, 44% 58%, 45% 66%, 50% 66%, 56% 65%, 61% 66%, 64% 58%, 69% 57%, 73% 59%, 73% 66%, 78% 68%, 84% 66%, 89% 68%, 95% 69%, 98% 58%, 100% 58%, 100% 72%, 100% 81%, 100% 89%, 100% 100%); }
   .game-screen__hud {
+    user-select: none;
     display: grid;
     grid-column-gap: 2rem;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 3rem 1fr;
     grid-template-columns: [shot-start] 1fr [hit-start] 8fr [score-start] 2fr [score-end];
     font-size: 2.5rem;
     color: #90b50e;
@@ -4806,6 +5016,8 @@ body {
       border: solid 5px #90b50e;
       padding: 1rem; }
     .game-screen__hud--round {
+      font-size: 2rem;
+      height: 4rem;
       margin-top: auto;
       grid-row: 1/2;
       text-align: center; }
@@ -4842,16 +5054,26 @@ body {
       grid-row: 2;
       grid-column-start: score-start; }
   .game-screen__message-box {
+    user-select: none;
     display: flex;
     position: absolute;
-    width: 30rem;
-    height: 10rem;
-    top: 40%;
+    width: 60rem;
+    height: 20rem;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
-    font-size: 9rem; }
+    font-size: 4rem; }
+    .game-screen__message-box--newGame {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem; }
+      .game-screen__message-box--newGame p {
+        margin: 3rem 0rem 3rem 0rem; }
 
 .btn {
   color: #f69a3a;
@@ -4869,6 +5091,10 @@ body {
   transform: translateY(-10px); }
   .btn:active {
     transform: translateY(0px); }
+  .btn--clear {
+    background-color: transparent;
+    font-family: "Press Start 2P", cursive;
+    color: black; }
 
 .timer {
   grid-column: 2/-1;
@@ -4880,9 +5106,9 @@ body {
 
 .duck {
   position: absolute;
-  z-index: 2;
-  width: 7rem;
-  height: 7rem;
+  z-index: 4;
+  width: 8rem;
+  height: 8rem;
   background-size: contain;
   background-repeat: no-repeat; }
   .duck--shot {
@@ -4896,7 +5122,7 @@ body {
     transform-origin: 60%; }
   .duck--fly {
     animation-name: duckFly;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-timing-function: steps(100, end); }
   .duck--flap {
     animation-name: duckFlap;

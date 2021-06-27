@@ -1,0 +1,22 @@
+@keyframes duckFly1 {
+  0% {
+    top: 95%;
+    right: 0%;
+    transform: rotateY(180deg);
+  }
+  39% {
+    transform: rotateY(180deg);
+  }
+
+  40% {
+    top: 50%;
+    right: 90%;
+    transform: rotateY(0deg);
+  }
+
+  90% {
+    top: -10%;
+    right: 10%;
+    //transform: rotateY(0deg);
+  }
+}
