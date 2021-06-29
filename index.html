@@ -41,8 +41,8 @@
     </div>
     <a href="#" class="btn u-mt-small">START</a>
     <div class="top-score__box">
-      <h2 class= "h2">TOP SCORE =  </h2>
-      <h2 class="h2" id="topScore">  12000</h2>
+      <h2 class= "h2">TOP SCORE = &nbsp;</h2>
+      <h2 class="h2" id="topScore"> </h2>
     </div>
     <p class="copyright u-mt-large">&copy;1984 NINTENDO CO.,LTD.</p>
   </div>  
@@ -54,15 +54,15 @@
       <div class="duck duck--img-3 duck--flap">
       </div>
     </div>
-    <div class="game-screen__forground"></div>
-    <div class="game-screen__message-box" id="message">
-      
-      <!-- <div class="game-screen__message-box--newGame">
-        <h2>GAME OVER !</h2>
-        <p>Start a New Game?</p>
-          <a href="#" id="yes" class="btn btn--clear">Yes</a>
-          <a href="#" id="no" class="btn btn--clear">No</a>
-      </div> -->
+    <div class="game-screen__forground noShoot"></div>
+    <div id = 'messageBox' class="game-screen__message-box u-hidden noShoot">
+      <div class="message noShoot" id="message"></div>
+      <div class=" noShoot game-screen__message-box--newGame u-hidden" id="GAMEOVER">
+        <h2 class="noShoot">GAME OVER !</h2>
+        <p class="noShoot">Start a New Game?</p>
+          <a href="#" id="yes" class="btn btn--clear noShoot">Yes</a>
+          <a href="#" id="no" class="btn btn--clear noShoot">No</a>
+      </div>
     </div>
     <div class="game-screen__hud">
       <div class="game-screen__hud--all game-screen__hud--round">

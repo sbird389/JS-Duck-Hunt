@@ -18,6 +18,7 @@
   align-items: flex-end;
   z-index: 1;
   &__forground {
+    pointer-events: none;
     background-image: url("../../IMAGES/Backround\ Front.png");
     background-size: contain;
     background-position: bottom;
@@ -119,14 +120,15 @@
     user-select: none;
     display: flex;
     position: absolute;
-    width: 60rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
     font-size: 4rem;
+    z-index: 0;
 
     &--newGame {
       margin-top: 3rem;

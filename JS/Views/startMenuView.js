@@ -10,6 +10,10 @@ class StartMenuView extends View {
         handler();
       });
   }
+
+  setHighScore(data) {
+    document.getElementById("topScore").innerText = data;
+  }
 }
 
 export default new StartMenuView();
